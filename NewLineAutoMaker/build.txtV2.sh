@@ -20,7 +20,9 @@ fi
 ####
 busybox echo -e "Menghitung jumlah kata di subjudul...\nSilahkan tunggu."
 busybox echo -e "#!/system/bin/sh\n#cd $cwd/txt" > "$cwd/02-$(basename $0)"
-cat "$@"|busybox awk -v path=$cwd '{print "NUMBER" NR+0 "=" NR+0 "\nstring" NR+0 "=\"" $0 "\"\nfile" NR+0 "=\$(busybox printf \x27%05d.%s\\n\x27 \"\$NUMBER" NR+0 "\" \"txt\")\necho \"\$string" NR+0 "\" > " path "/txt/\"\$file" NR+0 "\"" }' >> "$cwd/02-$(basename $0)"
+cat "$@"|busybox awk -v path=$cwd '{print "echo \"" $0 "\" > " path "/txt/\$EPOCHREALTIME.txt"}' >> "$cwd/02-$(basename $0)"
+
+#"NUMBER" NR+0 "=" NR+0 "\nstring" NR+0 "=\"" $0 "\"\nfile" NR+0 "=\$(busybox printf \x27%05d.%s\\n\x27 \"\$NUMBER" NR+0 "\" \"txt\")\necho \"\$string" NR+0 "\" > " path "/txt/\"\$file" NR+0 "\"" }' >> "$cwd/02-$(basename $0)"
 echo "echo \"\$0 was done..\"" >> "$cwd/02-$(basename $0)"
 # 1
 sh "$cwd/02-$(basename $0)"
