@@ -33,5 +33,7 @@ ubah garis baru jadi "#".<br/>
 di text editor biasa, replace # jadi spasi.<br/>
 dan hilangkan tanda kutip '"', terserah anda mengganti dengan karakter apa, asal jangan ada tanda kutip.<br/>
 Baru kamu bisa gunakan skrip newline maker ini. Dengan perintah di terminal.<br/><br/>
-<pre>sh main-CreateNLSubrip.sh /path/subrip.srt</pre>
+update - gunakan versi 2<br/>
+versi lama terlalu banyak makan memori.<br/><br/>
+<pre>sh ./build.txt.sh /path/subrip.srt</pre>
 </a> 
