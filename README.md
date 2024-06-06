@@ -29,14 +29,14 @@ skrip akan membagi 2 semua kata,<br/>Misalnya 4 kata, menjadi baris diatas 2 kat
 jika Anda mendapat berkas subrip.srt dari unduhan.<br/>
 Mungkin ada 2 dialog sperti.<br/>
 <pre>1
-00:00:10,899 --> 00;00:15,780
+00:00:10,899 --> 00:00:15,780
 - dialog pertama
 - dialog kedua.
 
 </pre>
 ubah jadi.<br/>
 <pre>1
-00:00:10,899 --> 00;00:15,780
+00:00:10,899 --> 00:00:15,780
 dialog pertama./ dialog kedua.
 
 </pre>
@@ -44,7 +44,7 @@ Dan kamu perlu membuang semua baris baru menjadi spasi dulu.<br/>
 di android gunakan aplikasi "easy subtitle".
 ubah garis baru jadi "#".<br/>
 lalu di aplikasi text editor biasa(bisa di MT manager), replace # jadi spasi.<br/>
-dan ubah atau hilangkan symbol tanda petik 2 " dan simbol dolar $, terserah anda mengganti dengan karakter apa, asal jangan ada simbol petik 2 dan simbol $.<br/>
+dan ubah atau hilangkan symbol tanda petik 2 " dan simbol dolar "$", terserah anda mengganti dengan karakter apa, asal jangan ada simbol petik 2 dan simbol "$".<br/>
 Baru kamu bisa gunakan skrip newline maker ini. Dengan perintah di terminal.<br/><br/>
 update - gunakan versi 2<br/>
 versi lama terlalu banyak makan memori.<br/><br/>
